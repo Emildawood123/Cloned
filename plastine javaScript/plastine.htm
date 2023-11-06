@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let body = document.querySelector("body");
+        body.style.margin = 0;
+        let tringle = document.createElement("div");
+        let black = document.createElement("div");
+        let green = document.createElement("div");
+        tringle.style.borderLeft = "50vh solid red"
+        tringle.style.borderRight = "50vh solid transparent"
+        tringle.style.borderTop = "50vh solid  transparent"
+        tringle.style.borderBottom= "50vh solid transparent"
+        black.style.width = "100%"
+        black.style.height = "33vh"
+        black.style.position = "absolute"
+        black.style.top = "0"
+        black.style.zIndex = "-1"
+        black.style.backgroundColor = "black"
+        green.style.backgroundColor = "green"
+        green.style.position = "absolute"
+        green.style.bottom = "0"
+        green.style.width = "100%"
+        green.style.height = "33vh"
+        green.style.zIndex = "-1"
+        body.appendChild(tringle)
+        body.appendChild(black)
+        body.appendChild(green)
+    </script>
+</body>
+</html>
